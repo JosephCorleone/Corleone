@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f3ecd4" />
+    <meta name="description" content="Cookie Editor privacy policy: cookie and tab information is processed locally in your browser, with no transmission to the developer, analytics, or telemetry." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; connect-src 'none'" />
+    <link rel="canonical" href="https://www.corleone.info/cookie-editor/privacy.html" />
+    <title>Cookie Editor — Privacy Policy</title>
+    <style>
+      /* Bundled fonts, licensed under SIL OFL 1.1. See fonts/OFL-*.txt. */
+      @font-face{font-family:Archivo;font-style:normal;font-weight:100 900;font-stretch:75% 125%;font-display:swap;src:url('fonts/archivo-latin-var.woff2') format('woff2')}
+      @font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('fonts/ibm-plex-sans-latin-var.woff2') format('woff2')}
+      @font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/ibm-plex-mono-latin-400.woff2') format('woff2')}
+      :root{--bg:#f3ecd4;--deep:#ebe2c6;--card:#fffcf0;--field:#fbf6e6;--ink:#1a1a1a;--soft:#5c5648;--line:#1a1a1a;--primary:#c43c6a;--primary-text:#b03360;--mint:#3db88a;--yellow:#e8c84a;--blue:#7eb6e8;--shadow:4px 4px 0 var(--line);color-scheme:light}
+      :root[data-theme=dark]{--bg:#24221e;--deep:#1d1b18;--card:#312e28;--field:#2a2823;--ink:#f3ecd4;--soft:#b5ac94;--line:#0c0b0a;--primary:#d4497a;--primary-text:#f07a8c;color-scheme:dark}
+      *{box-sizing:border-box}
+      html{scroll-padding-top:32px;-webkit-font-smoothing:antialiased}
+      body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.65}
+      a{color:inherit;text-underline-offset:4px;text-decoration-thickness:1px}
+      a:hover{color:var(--primary-text)}
+      button,a{-webkit-tap-highlight-color:transparent}
+      :focus-visible{outline:3px solid var(--primary);outline-offset:5px}
+      ::selection{background:var(--yellow);color:#1a1a1a}
+      .wrap{width:min(1120px,calc(100% - 64px));margin:auto}
+      .skip-link{position:fixed;top:12px;left:12px;transform:translateY(-160%);z-index:5;padding:10px 18px;background:var(--card);border:2px solid var(--line);border-radius:6px}
+      .skip-link:focus{transform:translateY(0)}
+      .topbar{border-bottom:2px solid var(--line)}
+      .topbar-inner{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+      .brand{display:flex;align-items:center;gap:15px;text-decoration:none;color:var(--ink)}
+      .brand:hover{color:var(--ink)}
+      .brand-mark{width:48px;height:48px;border:2px solid var(--line);border-radius:13px;box-shadow:3px 3px 0 var(--line);transform:rotate(-7deg);flex:none;background:#c43c6a;overflow:hidden}
+      .brand-mark svg{display:block;width:100%;height:100%}
+      .brand-title{font-family:Archivo,system-ui,sans-serif;font-stretch:75%;font-size:25px;line-height:1.05;font-weight:800;text-transform:uppercase;letter-spacing:-.02em}
+      .brand-title span{color:var(--primary)}
+      .brand-subtitle,.eyebrow,.meta,.side-label,.section-index,.fact-label,.badge,.permission-name,.colophon{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;line-height:1.5;letter-spacing:.06em;text-transform:uppercase;font-weight:400}
+      .brand-subtitle{display:block;margin-top:5px;color:var(--soft);font-size:10px}
+      .top-actions{display:flex;align-items:center;gap:24px}
+      .home-link{font-size:13px;font-weight:600;text-decoration:none}
+      .theme-toggle{display:flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:8px 13px;font:500 12px 'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:6px;box-shadow:2px 2px 0 var(--line);cursor:pointer}
+      .theme-toggle:hover{transform:translateY(-1px)}
+      .theme-toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8}
+      .hero{display:grid;grid-template-columns:minmax(0,1fr) 310px;align-items:center;gap:70px;padding:72px 0 64px;border-bottom:2px solid var(--line)}
+      .eyebrow{display:flex;align-items:center;gap:10px;color:var(--soft);margin:0 0 20px}
+      .eyebrow::before{content:'';width:9px;height:9px;border:2px solid var(--line);background:var(--primary);transform:rotate(-8deg)}
+      h1,h2,h3,p{margin-top:0}
+      h1{font-family:Archivo,system-ui,sans-serif;font-stretch:75%;font-weight:850;text-transform:uppercase;font-size:clamp(48px,6.4vw,78px);letter-spacing:-.045em;line-height:.97;margin-bottom:24px}
+      h1 span{display:block;color:var(--primary)}
+      .hero-copy{font-size:20px;line-height:1.5;max-width:590px;margin-bottom:24px}
+      .hero-copy strong{font-weight:600}
+      .meta{color:var(--soft);margin:0;font-size:10px;letter-spacing:.04em}
+      .overview{border:2px solid var(--line);border-radius:10px;background:var(--card);box-shadow:var(--shadow);transform:rotate(1.3deg)}
+      .overview-top{padding:16px 20px;border-bottom:2px solid var(--line);display:flex;justify-content:space-between;align-items:center;background:var(--deep);border-radius:8px 8px 0 0}
+      .overview-top span{font:400 10px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em}
+      .window-dots{display:flex;gap:5px}
+      .window-dots i{width:7px;height:7px;border:1.5px solid var(--line);border-radius:50%;background:var(--primary)}
+      .window-dots i:nth-child(2){background:var(--yellow)}
+      .window-dots i:nth-child(3){background:var(--mint)}
+      .overview-body{padding:24px 20px 20px}
+      .badge{display:inline-flex;align-items:center;gap:8px;background:var(--mint);color:#151b16;border:2px solid var(--line);padding:5px 9px;border-radius:4px;font-size:10px;margin-bottom:18px}
+      .badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#151b16}
+      .facts{list-style:none;margin:0;padding:0}
+      .facts li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid var(--line);font-size:13px}
+      .facts li strong{font-weight:600;white-space:nowrap}
+      .facts li span{color:var(--soft)}
+      .overview-note{margin:16px 0 0;color:var(--soft);font-size:12px;line-height:1.5}
+      .layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:62px;padding:48px 0 72px;align-items:start}
+      .toc{position:sticky;top:28px}
+      .side-label{margin:0 0 18px;color:var(--soft)}
+      .toc ol{list-style:none;margin:0;padding:0;border-top:2px solid var(--line)}
+      .toc li{border-bottom:1px solid var(--line)}
+      .toc a{display:flex;gap:12px;padding:12px 0;text-decoration:none;font-size:13px;line-height:1.5}
+      .toc a span{font:400 10px 'IBM Plex Mono',monospace;color:var(--primary-text);padding-top:3px}
+      .side-note{margin:22px 0 0;font-size:12px;color:var(--soft);line-height:1.7}
+      .policy-section{scroll-margin-top:28px;background:var(--card);border:2px solid var(--line);border-radius:10px;margin-bottom:24px;box-shadow:var(--shadow);overflow:hidden}
+      .section-heading{display:flex;align-items:center;gap:14px;padding:20px 26px;border-bottom:2px solid var(--line);background:var(--field)}
+      .section-index{display:grid;place-items:center;width:28px;height:28px;border:2px solid var(--line);border-radius:5px;background:var(--yellow);color:#1a1a1a;flex:none;box-shadow:2px 2px 0 var(--line)}
+      .policy-section:nth-child(3n+2) .section-index{background:var(--mint)}
+      .policy-section:nth-child(3n) .section-index{background:var(--blue)}
+      h2{font-family:Archivo,system-ui,sans-serif;font-stretch:85%;font-size:24px;line-height:1.2;font-weight:750;letter-spacing:-.02em;margin:0}
+      .section-body{padding:24px 26px 26px}
+      .section-body p{margin-bottom:16px}
+      .section-body p:last-child{margin-bottom:0}
+      .section-body ul{padding-left:21px;margin:0 0 18px}
+      .section-body li{padding-left:3px;margin-bottom:11px}
+      .section-body li:last-child{margin-bottom:0}
+      .section-body strong{font-weight:600}
+      .note{padding:15px 17px;background:var(--deep);border-left:4px solid var(--primary);border-radius:0 5px 5px 0;color:var(--soft);font-size:14px;line-height:1.65}
+      .permissions{margin:0}
+      .permission{display:grid;grid-template-columns:126px minmax(0,1fr);gap:18px;border-bottom:1px solid var(--line);padding:15px 0}
+      .permission:first-child{padding-top:0}
+      .permission:last-child{border:0;padding-bottom:0}
+      .permission-name{color:var(--primary-text);font-size:11px;padding-top:4px;overflow-wrap:anywhere;text-transform:none;letter-spacing:0}
+      .permission dd{margin:0;font-size:15px;line-height:1.65}
+      .contact-card{padding:18px;border:2px solid var(--line);border-radius:6px;background:var(--deep);display:flex;align-items:center;justify-content:space-between;gap:18px}
+      .contact-card .fact-label{display:block;color:var(--soft);margin-bottom:5px}
+      .contact-card a{font-size:17px;font-weight:600;overflow-wrap:anywhere}
+      .contact-arrow{font-size:26px;color:var(--primary)}
+      footer{border-top:2px solid var(--line);background:var(--deep)}
+      .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:25px 0}
+      .footer-copy{font-size:12px;margin:0;color:var(--soft)}
+      .footer-copy strong{color:var(--ink);font-weight:600}
+      .footer-links{display:flex;flex-wrap:wrap;gap:15px;font-size:12px}
+      .colophon{font-size:9px;color:var(--soft);letter-spacing:0;text-transform:none;padding-bottom:20px;margin:0}
+      .colophon a{margin-right:8px}
+      @media(max-width:900px){.hero{gap:35px;grid-template-columns:minmax(0,1fr) 280px}.layout{grid-template-columns:175px minmax(0,1fr);gap:30px}.permission{grid-template-columns:110px minmax(0,1fr)}}
+      @media(max-width:700px){.wrap{width:calc(100% - 36px)}.topbar-inner{min-height:88px;gap:14px}.brand{gap:11px}.brand-mark{width:40px;height:40px;border-radius:10px}.brand-title{font-size:21px}.brand-subtitle{font-size:8px}.top-actions{gap:12px}.home-link{display:none}.theme-toggle{padding:8px 10px;font-size:11px}.hero{grid-template-columns:1fr;padding:42px 0 36px;gap:28px}.hero-copy{font-size:18px}.overview{transform:none;max-width:none}.overview-body{padding:18px}.overview-top{padding:12px 18px}.overview-note{margin-top:12px}.facts{display:grid;grid-template-columns:1fr 1fr;column-gap:18px}.facts li{font-size:12px;display:block}.facts li span,.facts li strong{display:block}.facts li strong{margin-top:3px}.layout{display:block;padding:30px 0 40px}.toc{position:static;margin-bottom:28px}.toc ol{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--line);column-gap:20px}.toc li:last-child,.toc li:nth-last-child(2){border-bottom:0}.toc a{padding:9px 0;font-size:12px}.side-label{margin-bottom:12px}.side-note{display:none}.section-heading{padding:17px 18px;gap:12px}h2{font-size:22px}.section-body{padding:20px 18px;font-size:16px}.permission{grid-template-columns:1fr;gap:5px;padding:14px 0}.permission dd{font-size:14px}.contact-card{padding:14px}.contact-card a{font-size:15px}.footer-inner{align-items:flex-start;flex-direction:column;gap:14px;padding:22px 0}.colophon{line-height:1.9}}
+      @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+      @media print{.theme-toggle,.toc,.home-link,.skip-link{display:none!important}.wrap{width:100%}.hero{padding:20px 0;gap:25px;grid-template-columns:1fr 260px}h1{font-size:46px}.layout{display:block;padding:24px 0}.policy-section,.overview{box-shadow:none;break-inside:avoid}body,:root[data-theme=dark]{--bg:#fff;--deep:#f1f1f1;--card:#fff;--field:#fff;--ink:#111;--soft:#444;--line:#111;color:#111;background:#fff}.footer-links,.colophon{display:none}}
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#policy">Skip to privacy policy</a>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#" aria-label="Cookie Editor privacy policy, back to top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><rect width="128" height="128" rx="30" fill="#c43c6a"/><mask id="policy-cookie-bite"><rect width="128" height="128" fill="#fff"/><circle cx="95" cy="43" r="26" fill="#000"/></mask><circle cx="59" cy="69" r="38" fill="#f4efe3" mask="url(#policy-cookie-bite)"/><circle cx="51" cy="59" r="7" fill="#2a201c"/><circle cx="66" cy="80" r="6.2" fill="#2a201c"/></svg>
+          </span>
+          <span><span class="brand-title">Cookie <span>Editor</span></span><span class="brand-subtitle">A tool by Joseph Corleone</span></span>
+        </a>
+        <div class="top-actions">
+          <a class="home-link" href="/">&#8592; Corleone.info</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Use dark theme">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.6 13.1A8.7 8.7 0 0 1 10.9 3.4 8.8 8.8 0 1 0 20.6 13.1Z"/></svg>
+            <span id="theme-label">Dark mode</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="wrap" id="policy">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Cookie Editor / Privacy</p>
+          <h1>Privacy <span>policy.</span></h1>
+          <p class="hero-copy"><strong>Your cookies stay in your browser.</strong><br />Cookie Editor works locally. Cookie contents and tab information are not sent to the developer or an external server.</p>
+          <p class="meta">Last updated: <time datetime="2026-10-19">19 October 2026</time> &nbsp;/&nbsp; Extension version 1</p>
+        </div>
+        <aside class="overview" aria-label="Privacy at a glance">
+          <div class="overview-top"><span>Privacy at a glance</span><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <div class="overview-body">
+            <span class="badge">Local by design</span>
+            <ul class="facts"><li><span>Cookie processing</span><strong>On your device</strong></li><li><span>Developer uploads</span><strong>None</strong></li><li><span>Analytics / telemetry</span><strong>None</strong></li><li><span>Cookie exports</span><strong>Your clipboard</strong></li></ul>
+            <p class="overview-note">Local access still matters. Cookies can contain personal identifiers and session tokens; this policy explains how the extension handles them.</p>
+          </div>
+        </aside>
+      </div>
+      <div class="layout">
+        <nav class="toc" aria-label="Policy sections">
+          <p class="side-label">On this page</p>
+          <ol><li><a href="#about"><span>01</span> About this policy</a></li><li><a href="#access"><span>02</span> Data the extension accesses</a></li><li><a href="#local"><span>03</span> Local processing &amp; storage</a></li><li><a href="#permissions"><span>04</span> Why permissions are needed</a></li><li><a href="#use"><span>05</span> Data use &amp; sharing</a></li><li><a href="#controls"><span>06</span> Your controls</a></li><li><a href="#links"><span>07</span> Links &amp; policy updates</a></li><li><a href="#contact"><span>08</span> Contact</a></li></ol>
+          <p class="side-note">Plain language.<br />Local processing.<br />You stay in control.</p>
+        </nav>
+        <div>
+          <section class="policy-section" id="about" aria-labelledby="about-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">01</span><h2 id="about-title">About this policy</h2></div>
+            <div class="section-body"><p>Cookie Editor is a browser extension provided by <strong>Joseph Corleone</strong>. It lets you inspect, create, edit, search, delete, import, and export browser cookies, and clear site data to troubleshoot websites.</p><p>This policy describes the extension&rsquo;s data handling through its popup, side panel, options page, and DevTools interface.</p></div>
+          </section>
+          <section class="policy-section" id="access" aria-labelledby="access-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">02</span><h2 id="access-title">Data the extension accesses</h2></div>
+            <div class="section-body"><ul><li><strong>Cookie information:</strong> names, values, domains, paths, expiry dates, and other cookie attributes needed for cookie management.</li><li><strong>Website and tab information:</strong> browser tab URLs and related tab information used to identify websites, show their cookies, and refresh affected tabs after a site-data reset.</li><li><strong>Extension preferences:</strong> local settings such as theme, advanced cookie display, export format, animations, and DevTools preferences.</li></ul><p class="note">Cookie values may contain personal identifiers or authentication and session tokens. The extension handles this information locally to provide the features you use.</p></div>
+          </section>
+          <section class="policy-section" id="local" aria-labelledby="local-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">03</span><h2 id="local-title">Local processing &amp; storage</h2></div>
+            <div class="section-body"><p><strong>Cookie contents and tab information are processed locally in your browser.</strong> Cookie Editor does not send this information to the developer or an external server. The extension contains no analytics or telemetry and does not download or execute remote code.</p><p>Imported cookie text is processed locally and saved as browser cookies when you choose to import it. Exporting cookies copies the requested cookie data to your clipboard; it does not upload that data.</p><p>Interface preferences are stored in local extension storage. Cookies remain in the browser according to their expiration settings and your browser controls, unless you edit or delete them. The developer does not retain copies of cookie contents or tab information.</p><p>Clipboard exports and copies you save elsewhere remain until you or your system removes them. You control any subsequent sharing of that exported data.</p></div>
+          </section>
+          <section class="policy-section" id="permissions" aria-labelledby="permissions-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">04</span><h2 id="permissions-title">Why permissions are needed</h2></div>
+            <div class="section-body"><dl class="permissions">
+              <div class="permission"><dt class="permission-name">cookies</dt><dd>Read, create, edit, delete, import, and export cookies for websites you authorize. The options page supports browser-wide cookie operations after requesting permission for all websites.</dd></div>
+              <div class="permission"><dt class="permission-name">tabs</dt><dd>Identify the active website, update displayed cookies when tabs change, and reload or reopen matching tabs after you clear site data.</dd></div>
+              <div class="permission"><dt class="permission-name">storage</dt><dd>Save extension preferences locally in your browser.</dd></div>
+              <div class="permission"><dt class="permission-name">sidePanel</dt><dd>Display the cookie management interface beside the website you are viewing.</dd></div>
+              <div class="permission"><dt class="permission-name">browsingData</dt><dd>Remove the selected site&rsquo;s cookies, cache, local storage, IndexedDB, service workers, and other supported website storage when you choose to clear site data.</dd></div>
+              <div class="permission"><dt class="permission-name">scripting</dt><dd>Run a function bundled with the extension in authorized website tabs to clear sessionStorage and localStorage during a site-data reset.</dd></div>
+              <div class="permission"><dt class="permission-name">Website access</dt><dd>Optional website permissions allow cookie management on the websites you approve. You can review or revoke this access in your browser&rsquo;s extension settings.</dd></div>
+            </dl></div>
+          </section>
+          <section class="policy-section" id="use" aria-labelledby="use-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">05</span><h2 id="use-title">Data use &amp; sharing</h2></div>
+            <div class="section-body"><p>Cookie Editor uses the data it accesses solely to provide its cookie management and site-data reset features.</p><ul><li>It does not sell or transfer user data to third parties.</li><li>It does not use user data for advertising, profiling, or purposes unrelated to these features.</li><li>It does not use user data to determine creditworthiness or for lending purposes.</li></ul><p>Cookie Editor&rsquo;s use of information received from Chrome APIs complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/user-data">Chrome Web Store User Data Policy</a>, including its Limited Use requirements.</p></div>
+          </section>
+          <section class="policy-section" id="controls" aria-labelledby="controls-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">06</span><h2 id="controls-title">Your controls</h2></div>
+            <div class="section-body"><p>You choose which website permissions to grant and can revoke them through your browser&rsquo;s extension settings. You initiate cookie imports, exports, edits, deletion, and site-data resets.</p><p>At your request, a site-data reset removes supported cookies, cache, local storage, session storage, IndexedDB, and service-worker data for the selected site and refreshes affected tabs. Available deletion depends on browser support and the permissions you grant.</p><p>You can remove the extension through your browser&rsquo;s extension settings. Cookies are website data held by the browser; removing the extension does not itself delete all website cookies or copies of data you previously exported.</p><p class="note">Editing cookies or clearing site data can change website behavior or sign you out of websites. Cookie Editor does not reset your browser&rsquo;s website permission choices, such as camera or notification permissions.</p></div>
+          </section>
+          <section class="policy-section" id="links" aria-labelledby="links-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">07</span><h2 id="links-title">Links &amp; policy updates</h2></div>
+            <div class="section-body"><p>The extension includes links to the developer&rsquo;s website, a donation page, source attribution, and license information. Opening a link takes you to a separate website, whose own privacy terms apply. Cookie Editor does not attach cookie exports to these links.</p><p>This policy describes the browser extension. It does not replace the privacy terms of websites you visit or external services you choose to use.</p><p>If the extension&rsquo;s data practices change, this policy will be updated. The date at the top of this page identifies the latest revision.</p></div>
+          </section>
+          <section class="policy-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-heading"><span class="section-index" aria-hidden="true">08</span><h2 id="contact-title">Contact</h2></div>
+            <div class="section-body"><p>For privacy questions about Cookie Editor, contact Joseph Corleone.</p><div class="contact-card"><div><span class="fact-label">Privacy questions</span><a href="mailto:joseph@corleone.info">joseph@corleone.info</a></div><span class="contact-arrow" aria-hidden="true">&#8599;</span></div></div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer><div class="wrap"><div class="footer-inner"><p class="footer-copy"><strong>Cookie Editor</strong> &middot; Joseph Corleone<br />A little more control over your browser.</p><div class="footer-links"><a href="/">Corleone.info</a><a href="mailto:joseph@corleone.info">Contact</a><a href="#policy">Back to top &#8593;</a></div></div><p class="colophon">Bundled typefaces licensed under SIL OFL 1.1: <a href="fonts/OFL-Archivo.txt">Archivo</a><a href="fonts/OFL-IBMPlexSans.txt">IBM Plex Sans</a><a href="fonts/OFL-IBMPlexMono.txt">IBM Plex Mono</a></p></div></footer>
+    <script>
+      (() => {
+        const root = document.documentElement;
+        const button = document.getElementById('theme-toggle');
+        const label = document.getElementById('theme-label');
+        const themeColor = document.querySelector('meta[name="theme-color"]');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+        let dark = systemTheme.matches;
+        let chosen = false;
+        const renderTheme = () => {
+          root.dataset.theme = dark ? 'dark' : 'light';
+          button.setAttribute('aria-pressed', String(dark));
+          button.setAttribute('aria-label', dark ? 'Use light theme' : 'Use dark theme');
+          label.textContent = dark ? 'Light mode' : 'Dark mode';
+          themeColor.setAttribute('content', dark ? '#24221e' : '#f3ecd4');
+        };
+        button.addEventListener('click', () => { chosen = true; dark = !dark; renderTheme(); });
+        systemTheme.addEventListener('change', event => { if (!chosen) { dark = event.matches; renderTheme(); } });
+        renderTheme();
+      })();
+    </script>
+  </body>
+</html>

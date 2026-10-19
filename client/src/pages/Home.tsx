@@ -1004,6 +1004,7 @@ export default function Home() {
 <footer className="relative z-10 mt-24 flex flex-wrap items-center justify-between gap-4 border-t border-[#ede5d7]/30 pt-4 text-[10px] uppercase tracking-[.14em] text-[#ede5d7]/55">
 <span>Joseph Corleone — the family business</span>
 <span>Corleone © 2026</span>
+<a data-cursor="PRIVACY" href="/cookie-editor/privacy.html" className="transition hover:text-[#ede5d7]">Cookie Editor privacy</a>
 <a data-cursor="TOP" href="#home" onClick={(e) => { e.preventDefault(); goTo("home"); }}>back to top ↑</a>
 </footer>
 </section>
